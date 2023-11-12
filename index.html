@@ -17,12 +17,14 @@
 				<h1>Miner Stacker</h1><br>
 				<ul>
 					<li><a href= "index.html">Mine</a></li>
-					<li><button type = "button" onclick="checkUser()">Log In</a></li>
+					<li><a href= "upgrades.html">Upgrade</a></li>
+					<li><a onclick="checkUser()">Log In</a></li>
+					<!--<li><button type = "button" onclick="checkUser()">Log In</a></li>-->
 				</ul>
 			</head>
 		</div>
 		<div class="middle">
-			<br><br><body>
+			<br><br><body onload="supports_html5_storage()">
 				<label id="prestige">Prestige Power: 1.0 Multiplier</label><br><br><br>
 				<label id="clickPower">Click Power: 1 Ore Per Click</label><br><br><br>
 				<label id="minerPower">Miners: 0 Miners = 0 Ore Per Second</label><br><br><br>

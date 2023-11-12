@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<title>Miner Stacker: Mine</title>
+	<div class="grid-container">
+		<div class="header">
+			<head>
+				<link rel="stylesheet" type="text/css" href="style.css" />
+				<script type="text/javascript" src="main2.js"></script>
+				<h1>Miner Stacker</h1><br>
+                <h2>Mine</h2><br>
+				<ul>
+					<li><a href= "index2.html">Mine</a></li>
+					<li><a href= "upgrades.html">Upgrade</a></li>
+				</ul>
+			</head>
+		</div>
+		<div class="middle">
+			<br><br><body onload="updateDisplay()">
+				<label id="prestigePower">Prestige Power: 1.0 Multiplier</label><br><br><br>
+				<label id="clickPower">Click Power: 1 Ore Per Click</label><br><br><br>
+				<label id="minerPower">Miners: 0 Miners = 0 Ore Per Second</label><br><br><br>
+				
+				<label id="oreAmount"> Ore Amount: 0 Ore</label><br><br><br>
+				<button type="button" onclick="updateOre()" style="height: 150px; width: 250px;">Mine here</button><br><br><br>
+				
+				<button type="button" onclick="upgradeClick()">Upgrade here</button>
+				<label id="upgrade"> Upgrade Cost: 10 Ore</label><br><br>
+				
+				<button type="button" onclick="upgradeMiner()">Upgrade Miners here</button>
+				<label id="upgradeMiner"> Upgrade Miner Cost: 100 Ore</label><br><br><br>
+				
+				<button type="button" onclick="prestige()">Prestige</button>
+				<label id="upgradePrestige">Prestige Cost: 1000000 Ore</label><br><br><br>
+                
+                <button type="button" onclick="addStorage()">reset</button>
+			</body>
+		</div>
+		<div id="animation">
+			<img src="miner.png" alt="miner" onclick="updateOre()">
+		</div>
+	</div>
+</html>
